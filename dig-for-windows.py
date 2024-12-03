@@ -45,7 +45,9 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("dig-for-windows")
         self.setMinimumSize(800, 600)
-        
+        self.setMaximumSize(1920, 1080)
+        self.resize(1280, 720)
+
         # Load settings and initialize the UI
         self.load_settings()
         self.setup_ui()
@@ -121,9 +123,9 @@ class MainWindow(QMainWindow):
             "System Default": "",
             "Cloudflare (1.1.1.1)": "1.1.1.1",
             "Google (8.8.8.8)": "8.8.8.8",
-            "Hetzner - Helium": "193.47.99.5",
-            "Hetzner - Oxygen": "88.198.229.192",
-            "Hetzner - Hydrogen": "213.133.100.98",
+            "Hetzner - helium.ns.hetzner.de": "193.47.99.5",
+            "Hetzner - oxygen.ns.hetzner.com": "88.198.229.192",
+            "Hetzner - hydrogen.ns.hetzner.com": "213.133.100.98",
             "Quad9 (9.9.9.9)": "9.9.9.9"
         }
         
@@ -142,7 +144,7 @@ class MainWindow(QMainWindow):
     def perform_lookup(self):
         domain = self.domain_input.text().strip()
         if not domain:
-            self.results_text.setText("Please enter a domain name")
+            self.results_text.setText("Please enter a domain name!")
             return
             
         record_type = self.record_combo.currentText()
