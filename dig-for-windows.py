@@ -123,9 +123,9 @@ class MainWindow(QMainWindow):
             "System Default": "",
             "Cloudflare (1.1.1.1)": "1.1.1.1",
             "Google (8.8.8.8)": "8.8.8.8",
-            "Hetzner - helium.ns.hetzner.de": "193.47.99.5",
-            "Hetzner - oxygen.ns.hetzner.com": "88.198.229.192",
-            "Hetzner - hydrogen.ns.hetzner.com": "213.133.100.98",
+            "Hetzner - (helium.ns.hetzner.de)": "193.47.99.5",
+            "Hetzner - (oxygen.ns.hetzner.com)": "88.198.229.192",
+            "Hetzner - (hydrogen.ns.hetzner.com)": "213.133.100.98",
             "Quad9 (9.9.9.9)": "9.9.9.9"
         }
         
